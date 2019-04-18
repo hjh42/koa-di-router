@@ -1,0 +1,35 @@
+{
+  "name": "koa-di-router",
+  "version": "0.1.0-alpha1",
+  "description": "A router library with dependency injection",
+  "main": "lib/koa-di-router.js",
+  "repository": "git@github.com:sheenhan/koa-di-router.git",
+  "author": "Sheen93 <sheen93.han@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "koa",
+    "router",
+    "decorator"
+  ],
+  "scripts": {
+    "bundle": "./node_modules/.bin/rollup --config ./built/rollup.config.js",
+    "dev": "./node_modules/.bin/rollup -c ./built/rollup.config.dev.js -w"
+  },
+  "dependencies": {
+    "koa": "^2.7.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/runtime": "^7.4.2",
+    "rollup": "^1.10.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3"
+  }
+}
